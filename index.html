@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Perda de Peso e Sugestão de Alimentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo de Perda de Peso</h1>
+    </header>
+    <main>
+            <div class="hero__foreground">
+        <section class="calc-section">
+            <h2>Calcule Sua Meta de Perda de Peso</h2>
+            <form id="weight-loss-form">
+                <label for="current-weight">Peso Atual (kg):</label>
+                <input type="number" id="current-weight" name="current-weight" required>
+
+                <label for="goal-weight">Meta de Peso (kg):</label>
+                <input type="number" id="goal-weight" name="goal-weight" required>
+
+                <label for="months">Meses para atingir a meta:</label>
+                <input type="number" id="months" name="months" required>
+
+                <button type="submit">Calcular</button>
+            </form>
+
+            <div id="result">
+                <p id="calculation-result"></p>
+            </div>
+        </section>
+
+        <section class="food-section">
+            <h2>Sugestões de Alimentos</h2>
+            <p>Com base em uma dieta balanceada para atingir sua meta de perda de peso, sugerimos os seguintes alimentos:</p>
+            <ul>
+                <li>Frango grelhado</li>
+                <li>Ovos cozidos ou mexidos</li>
+                <li>Pão integral</li>
+                <li>Legumes (brócolis, cenoura, abobrinha)</li>
+                <li>Frutas (banana, maçã, laranja)</li>
+                <li>Iogurte natural</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por @acre.prog</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-background: #030207;
+    --color-white: #fff;
+    --color-blue: #1474b4;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-white);
+}
+
+header {
+    max-width: 70%;
+    margin: 20px auto;
+    margin-bottom: -1.2rem;
+    background-color: var(--color-background);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: var(--color-background);
+    box-shadow: 0 0 20px rgba(7, 43, 247, 0.26);
+}
+
+main {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--color-background);
+    box-shadow: 0 0 20px rgba(7, 43, 247, 0.26);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 1rem;
+}
+
+.calc-section, .food-section {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-white);
+    border-radius: 25px;
+}
+
+button {
+    margin-left: 45%;
+    padding: 10px 20px;
+    background-color: var(--color-white);
+    color: var black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 13px;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+button:hover {
+    background-color: var var blue;
+}
+
+.food-section{
+margin-left: 1rem;
+}
+
+#result {
+    margin-top: 20px;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--color-background);
+    color: var(--color-white);
+}
