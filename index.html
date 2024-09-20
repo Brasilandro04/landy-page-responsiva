@@ -3,52 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo de Perda de Peso e Sugestão de Alimentos</title>
+    <title>Técnica Pomodoro</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Inclui Chart.js -->
 </head>
 <body>
-    <header>
-        <h1>Cálculo de Perda de Peso</h1>
-    </header>
-    <main>
-            <div class="hero__foreground">
-        <section class="calc-section">
-            <h2>Calcule Sua Meta de Perda de Peso</h2>
-            <form id="weight-loss-form">
-                <label for="current-weight">Peso Atual (kg):</label>
-                <input type="number" id="current-weight" name="current-weight" required>
+    <div class="container">
+        <h1>Página Pomodoro</h1>
+        
+        <div class="category-selection">
+            <label for="category">Selecione a Categoria:</label>
+            <select id="category">
+                <option value="produtividade">Produtividade</option>
+                <option value="estudos">Estudos</option>
+            </select>
+        </div>
 
-                <label for="goal-weight">Meta de Peso (kg):</label>
-                <input type="number" id="goal-weight" name="goal-weight" required>
+        <div class="pomodoro-timer">
+            <p>Tempo: <span id="timer">25:00</span></p>
+            <button id="start-btn">Iniciar</button>
+            <button id="pause-btn">Pausar</button>
+            <button id="reset-btn">Reiniciar</button>
+        </div>
 
-                <label for="months">Meses para atingir a meta:</label>
-                <input type="number" id="months" name="months" required>
+        <div class="break-selection">
+            <label for="break-type">Tipo de Pausa:</label>
+            <select id="break-type">
+                <option value="curta">Pausa Curta (5 min)</option>
+                <option value="longa">Pausa Longa (10 min)</option>
+            </select>
+        </div>
 
-                <button type="submit">Calcular</button>
-            </form>
+        <!-- Gráfico de pizza -->
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
 
-            <div id="result">
-                <p id="calculation-result"></p>
+        <div class="photo-section">
+            <h2>Fotos da Rotina</h2>
+            <div class="photo-gallery">
+                <img src="estudo_150_616_1596570462.jpg" alt="Foto 1">
+                <img src="ganho_conquista.jpg" alt="Foto 2">
+                <img src="hormonios-da-felicidade-clinica-unavita-9796-1880x1253.jpeg" alt="Foto 3">
             </div>
-        </section>
-
-        <section class="food-section">
-            <h2>Sugestões de Alimentos</h2>
-            <p>Com base em uma dieta balanceada para atingir sua meta de perda de peso, sugerimos os seguintes alimentos:</p>
-            <ul>
-                <li>Frango grelhado</li>
-                <li>Ovos cozidos ou mexidos</li>
-                <li>Pão integral</li>
-                <li>Legumes (brócolis, cenoura, abobrinha)</li>
-                <li>Frutas (banana, maçã, laranja)</li>
-                <li>Iogurte natural</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>Desenvolvido por @acre.prog</p>
-    </footer>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
